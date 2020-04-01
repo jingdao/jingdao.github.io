@@ -73,8 +73,8 @@ figure {
   position: relative; }
 
 #colorlib-aside {
-  padding-top: 3em;
-  padding-bottom: 40px;
+  padding-top: 1em;
+  padding-bottom: 5px;
   float: left;
   width: 300px;
   position: fixed;
