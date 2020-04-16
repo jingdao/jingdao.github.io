@@ -237,7 +237,7 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
@@ -382,8 +382,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   clear: both;
   width: 100%;
   display: block; }
@@ -396,8 +396,8 @@ body.offcanvas {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-      padding-top: 5em;
-      padding-bottom: 8em; } }
+      padding-top: 2em;
+      padding-bottom: 2em; } }
 
 .author-img {
   background-size: cover;
@@ -581,6 +581,7 @@ body.offcanvas {
   margin-left: 60px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
+  overflow:auto;
   background-clip: padding-box; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
