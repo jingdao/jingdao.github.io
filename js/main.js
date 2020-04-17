@@ -264,7 +264,7 @@
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
+//		$("#sticky_item").stick_in_parent();
 
 	};
 
@@ -286,6 +286,15 @@
 		})
 	};
 
+	var generateBibliography = function() {
+		console.log('hello world');
+		var bib = "";
+		$('.bibref').each(function(index, value) {
+		  bib += value.innerHTML + "<br>";
+		});
+		$('#bibliography').html(bib);
+	};
+
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -304,6 +313,7 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		generateBibliography();
 	});
 
 

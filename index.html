@@ -73,6 +73,7 @@
 		  opacity: 1;
 		  transition: .5s ease;
 		  backface-visibility: hidden;
+		  max-width:100%;
 		}
 		.youtube-middle {
 		  transition: .5s ease;
@@ -90,6 +91,17 @@
 		}
 		.youtube-container:hover .youtube-middle {
 		  opacity: 1;
+		}
+		.paperlink:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.bibref {
+		  margin-top: 10px;
+		  margin-left: 10px;
+		  display:none;
+		  font-size:14px;
+		  font-family: monospace;
 		}
 	</style>
 
@@ -160,9 +172,15 @@
 					   				</div>
 					   			</div>
 					   			<div id="gifdiv" class="col-md-6 col-sm-12 col-xs-12 js-fullheight slider-text">
-                                    <img class="gifimg" src="images/incremental.gif" >
-                                    <img  class="gifimg" src="images/nuclear.gif">
-                                    <img  class="gifimg" src="images/excavator.gif">
+									<a target="_blank" href="https://youtu.be/VeaENwp6CnM">
+										<img class="gifimg" src="images/incremental.gif" >
+									</a>
+									<a target="_blank" href="https://youtu.be/8dwVW_4CrgY">
+										<img  class="gifimg" src="images/nuclear.gif">
+									</a>
+									<a target="_blank" href="https://youtu.be/JIOWMo4wfSo">
+										<img  class="gifimg" src="images/excavator.gif">
+									</a>
                                 </div>
 					   		</div>
 				   		</div>
@@ -190,13 +208,16 @@
 
 					               <div class="timeline-label">
 										<div class="col-md-7 col-sm-12 col-xs-12">
-										  <h2><a target="_blank" href="#">Excavator Workspace Modeling</a> <span>2020</span></h2>
+										  <h2>Excavator 3D Workspace Monitoring <span>2020</span></h2>
 										  <p>A workspace visualization and pose estimation framework for teleoperated excavators.
 										  The 3D geometry of the excavator workspace is captured in real-time by a laser-scanning robot.
 										  A 3D visualization of the workspace, containing pose of end effectors, pose of salient objects, and distances between them,
 										  is continuously updated and used to provide feedback to the remote operator concerning the progress of manipulation tasks.
 										  The method was validated at a mock urban disaster site where two excavators were teleoperated to pick up and move various debris
 										  aided by our workspace visualization system.
+										  </p>
+										  <p>Relevant papers: 
+												<a class="paperlink" target="_blank" href="#">[1]</a>
 										  </p>
 										</div>
 										<div class="col-md-5 col-sm-12 col-xs-12" >
@@ -220,11 +241,15 @@
 					               </div>
 					               <div class="timeline-label">
 										<div class="col-md-7 col-sm-12 col-xs-12">
-											<h2><a target="_blank" href="https://doi.org/10.1016/j.autcon.2020.103159">Point Cloud Object Retrieval using Deep Features</a> <span>2020</span></h2>
+											<h2>Point Cloud Object Retrieval using Deep Features <span>2020</span></h2>
 											  <p>A semi-automated method to efficiently retrieve duplicate building elements from raw 3D point cloud data.
 											  The point cloud is processed with a pre-trained deep feature extractor to generate a high-dimensional feature vector for each point.
 											  The selected exemplar is then provided as input to a feature-matching and peak-finding algorithm to determine positive matches.
 											  The method was validated on laser-scanned point clouds of construction sites and historical buildings.</p>
+											  <p> Relevant papers:
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1016/j.autcon.2020.103159">[1]</a>
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1680/icsic.64669.225">[2]</a>
+											  </p>
 										</div>
 										<div class="col-md-5 col-sm-12 col-xs-12">
 											<a target="_blank" href="https://youtu.be/BEfZ5qTfSDo">
@@ -239,7 +264,141 @@
 					               </div>
 					            </div>
 					         </article>
-							</div>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-folder"></i>
+					               </div>
+					               <div class="timeline-label">
+										<div class="col-md-7 col-sm-12 col-xs-12">
+											<h2>Incremental Point Cloud Segmentation <span>2019</span></h2>
+											  <p>
+											  An online method for mobile robots to incrementally build a semantically rich 3-D point cloud of the environment.
+											  A deep neural network, MCPNet, is trained to predict class labels and object instance labels for each point in the scanned point cloud in an incremental fashion.
+											  A multi-view context pooling (MCP) operator is used to combine point features obtained from multiple viewpoints to improve the classification accuracy.
+											  The network was trained and evaluated on ray-traced scans derived from the Stanford 3-D Indoor Spaces dataset.
+											  </p>
+											  <p> Relevant papers:
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1109/LRA.2019.2894915">[1]</a>
+											  </p>
+										</div>
+										<div class="col-md-5 col-sm-12 col-xs-12">
+											<a target="_blank" href="https://youtu.be/VeaENwp6CnM">
+											<div class="youtube-container">
+												<img src="https://img.youtube.com/vi/VeaENwp6CnM/mqdefault.jpg" class="youtube-image">
+												<div class="youtube-middle">
+												  <i class="icon-media-play" style="font-size:60px;color:#303030"></i>
+												</div>
+											</div>
+											</a>
+										</div>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-folder"></i>
+					               </div>
+					               <div class="timeline-label">
+										<div class="col-md-7 col-sm-12 col-xs-12">
+											<h2>Point Cloud Object Recognition <span>2019</span></h2>
+											  <p>
+											  A data-driven deep learning framework to automatically detect and classify building elements from a point cloud scene.
+											  The point cloud is first converted into a graph representation, and an edge-based classifier is used to form connected components from points in the same object.
+											  A point cloud-based object classifier is used to determine the type of building component based on the segmented points, augmented with context from surrounding points.
+											  Each detected object is matched with a corresponding (Building Element Modeling) BIM entity based on the nearest neighbor in the feature space.
+											  The method was validated on unstructured 3D point clouds of existing buildings and construction sites.
+											  </p>
+											  <p> Relevant papers:
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000842">[1]</a>
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1016/j.autcon.2017.10.033">[2]</a>
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000628">[3]</a>
+											  </p>
+										</div>
+										<div class="col-md-5 col-sm-12 col-xs-12">
+											<a target="_blank" href="https://youtu.be/zuPE9aB_wkE">
+											<div class="youtube-container">
+												<img src="https://img.youtube.com/vi/zuPE9aB_wkE/mqdefault.jpg" class="youtube-image">
+												<div class="youtube-middle">
+												  <i class="icon-media-play" style="font-size:60px;color:#303030"></i>
+												</div>
+											</div>
+											</a>
+										</div>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-folder"></i>
+					               </div>
+					               <div class="timeline-label">
+										<div class="col-md-7 col-sm-12 col-xs-12">
+											<h2>Disaster Relief Robot Simulation <span>2019</span></h2>
+											  <p>
+											  A simulation framework for mobile robots to scan a disaster site and detect damaged regions based on the acquired 3D point clouds.
+											  Disaster scenarios such as earthquakes and explosions are simulated on a CAD model of a nuclear power plant using rigid body physics.
+											  3D point clouds are obtained from the simulated sites using ray-tracing from a virtual mobile robot.
+											  The damage extent is estimated by performing point-to-point comparison between the acquired point cloud and the original 3D model.
+											  </p>
+											  <p> Relevant papers:
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1109/URAI.2019.8768770">[1]</a>
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1061/9780784482421.069">[2]</a>
+											  </p>
+										</div>
+										<div class="col-md-5 col-sm-12 col-xs-12">
+											<a target="_blank" href="https://youtu.be/8dwVW_4CrgY">
+											<div class="youtube-container">
+												<img src="https://img.youtube.com/vi/8dwVW_4CrgY/mqdefault.jpg" class="youtube-image">
+												<div class="youtube-middle">
+												  <i class="icon-media-play" style="font-size:60px;color:#303030"></i>
+												</div>
+											</div>
+											</a>
+										</div>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-folder"></i>
+					               </div>
+					               <div class="timeline-label">
+										<div class="col-md-7 col-sm-12 col-xs-12">
+											<h2>Crane 3D Workspace Monitoring <span>2019</span></h2>
+											  <p>
+											  A multi-modal sensing and visualization framework to provide an advanced crane operation assistance system.
+											  A combination of terrestrial laser scanning and aerial photogrammetry is used to reconstruct a 3D model of the crane environment.
+											  An encoder system is used to track the base load position whereas a vision system is used to track the load swing and load rotation.
+											  The vision system is further used to detect and track moving hazards and provide collision warnings.
+											  </p>
+											  <p> Relevant papers:
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1080/24705314.2018.1531348">[1]</a>
+												<a class="paperlink" target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000698">[2]</a>
+											  </p>
+										</div>
+										<div class="col-md-5 col-sm-12 col-xs-12">
+											<a target="_blank" href="https://youtu.be/vn8qw0WVqn8">
+											<div class="youtube-container">
+												<img src="https://img.youtube.com/vi/vn8qw0WVqn8/mqdefault.jpg" class="youtube-image">
+												<div class="youtube-middle">
+												  <i class="icon-media-play" style="font-size:60px;color:#303030"></i>
+												</div>
+											</div>
+											</a>
+										</div>
+					               </div>
+					            </div>
+					         </article>
+
+						</div>
 						</div>
 					</div>
 				</div>
@@ -268,55 +427,236 @@
 												<ol class='publication-list'>
 	<li>Zeng, S., <b>Chen, J.</b>, and Cho Y. (2020). <br>
 	<a target="_blank" href="https://doi.org/10.1016/j.autcon.2020.103159"><strong>User Exemplar-based Building Element Retrieval from Raw Point Clouds using Deep Point-level Features</strong></a> <br>
-	Automation in Construction, Volume 114, June 2020, 103159
+	Automation in Construction, Volume 114, June 2020, 103159 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{zeng2020autcon,<br>
+		title = "User exemplar-based building element retrieval from raw point clouds using deep point-level features",<br>
+		journal = "Automation in Construction",<br>
+		volume = "114",<br>
+		pages = "103159",<br>
+		year = "2020",<br>
+		issn = "0926-5805",<br>
+		doi = "https://doi.org/10.1016/j.autcon.2020.103159",<br>
+		url = "http://www.sciencedirect.com/science/article/pii/S0926580519310908",<br>
+		author = "Shiqin Zeng and Jingdao Chen and Yong K. Cho",<br>
+		}
+		</div>
 	</li>
 	<li>Park, J.S., <b>Chen, J.</b>, Cho, Y., Kang, D., and Son, B. (2020).<br>
 	<a target="_blank" href="https://doi.org/10.3390/s20010034"><strong>CNN-Based Person Detection Using Infrared Images for Night-Time Intrusion Warning System.</strong></a><br>
-	MDPI Sensors, 20(1), 34
+	MDPI Sensors, 20(1), 34 <br>
+		<a class="paperlink" target="_blank" href="https://github.com/jingdao/IR_detection">[code]</a>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{park2020sensors,<br>
+		AUTHOR = {Park, Jisoo and Chen, Jingdao and Cho, Yong K. and Kang, Dae Y. and Son, Byung J.},<br>
+		TITLE = {CNN-Based Person Detection Using Infrared Images for Night-Time Intrusion Warning Systems},<br>
+		JOURNAL = {Sensors},<br>
+		VOLUME = {20},<br>
+		YEAR = {2020},<br>
+		NUMBER = {1},<br>
+		ARTICLE-NUMBER = {34},<br>
+		URL = {https://www.mdpi.com/1424-8220/20/1/34},<br>
+		ISSN = {1424-8220},<br>
+		DOI = {10.3390/s20010034},<br>
+		}
+		</div>
 	</li> <li>
 	<b>Chen, J.</b>, Cho, Y., and Kira, Z. (2019). <br>
 	<a target="_blank" href="https://doi.org/10.1109/LRA.2019.2894915"><strong>Multi-view Incremental Segmentation of 3D Point Clouds for Mobile Robots.</strong></a><br>
-	IEEE Robotics and Automation Letters, 4(2), pp. 1240-1246,10.1109/LRA.2019.2894915
+	IEEE Robotics and Automation Letters, 4(2), pp. 1240-1246,10.1109/LRA.2019.2894915 <br>
+		<a class="paperlink" target="_blank" href="https://github.com/jingdao/multiview_segmentation">[code]</a>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@ARTICLE{chen2019ral,<br>
+		author={J. {Chen} and Y. K. {Cho} and Z. {Kira}},<br>
+		journal={IEEE Robotics and Automation Letters},<br>
+		title={Multi-View Incremental Segmentation of 3-D Point Clouds for Mobile Robots},<br>
+		year={2019},<br>
+		volume={4},<br>
+		number={2},<br>
+		pages={1240-1246},<br>
+		}
+		</div>
 	</li> <li>
 	<b>Chen, J.</b>, Kira, Z., and Cho, Y. (2019). <br>
 	<a target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000842"><strong>Deep Learning Approach to Point Cloud Scene Understanding for Automated Scan to 3D Reconstruction.</strong></a><br>
-	ASCE Journal of Computing in Civil Engineering, 33(4) DOI:10.1061/(ASCE)CP.1943-5487.0000842
+	ASCE Journal of Computing in Civil Engineering, 33(4) DOI:10.1061/(ASCE)CP.1943-5487.0000842 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{chen2019jcce,<br>
+		author = {Jingdao Chen  and Zsolt Kira  and Yong K. Cho },<br>
+		title = {Deep Learning Approach to Point Cloud Scene Understanding for Automated Scan to 3D Reconstruction},<br>
+		journal = {Journal of Computing in Civil Engineering},<br>
+		volume = {33},<br>
+		number = {4},<br>
+		pages = {04019027},<br>
+		year = {2019},<br>
+		doi = {10.1061/(ASCE)CP.1943-5487.0000842},<br>
+		}
+		</div>
 	</li> <li>
 	Fang, Y., <b>Chen, J.</b>, Cho, Y., and Kim, K.N. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1080/24705314.2018.1531348"><strong>Vision-based Load Sway Monitoring to Improve Crane Safety in Blind Lifts. </strong></a><br>
-	Journal of Structural Integrity and Maintenance, 10.1080/24705314.2018.1531348
+	Journal of Structural Integrity and Maintenance, 10.1080/24705314.2018.1531348 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{fang2018jsim,<br>
+		author = {Yihai Fang and Jingdao Chen and Yong K. Cho and Kinam Kim and Sijie Zhang and Esau Perez},<br>
+		title = {Vision-based load sway monitoring to improve crane safety in blind lifts},<br>
+		journal = {Journal of Structural Integrity and Maintenance},<br>
+		volume = {3},<br>
+		number = {4},<br>
+		pages = {233-242},<br>
+		year  = {2018},<br>
+		publisher = {Taylor &amp; Francis},<br>
+		doi = {10.1080/24705314.2018.1531348},<br>
+		}
+		</div>
 	</li> <li>
 	Kim, P., <b>Chen, J.</b>, and Cho, Y. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1016/j.autcon.2018.01.009"><strong> SLAM-driven robotic mapping and registration of 3D point clouds.</strong></a><br>
-	Automation in Construction, doi.org/10.1016/j.autcon.2018.01.009.
+	Automation in Construction, doi.org/10.1016/j.autcon.2018.01.009 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{kim2018autcon,<br>
+		title = "SLAM-driven robotic mapping and registration of 3D point clouds",<br>
+		journal = "Automation in Construction",<br>
+		volume = "89",<br>
+		pages = "38 - 48",<br>
+		year = "2018",<br>
+		issn = "0926-5805",<br>
+		doi = "https://doi.org/10.1016/j.autcon.2018.01.009",<br>
+		url = "http://www.sciencedirect.com/science/article/pii/S0926580517303990",<br>
+		author = "Pileun Kim and Jingdao Chen and Yong K. Cho",<br>
+		}
+		</div>
 	</li> <li>
 	<b>Chen, J.</b>, Fang, Y., and Cho, Y. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1016/j.autcon.2017.10.033"><strong> Performance Evaluation of 3D Descriptors for Object Recognition in Construction Applications.</strong></a><br>
-	Automation in Construction, Volume 86,February 2018, Pages 44-52, DOI: 10.1016/j.autcon.2017.10.033
+	Automation in Construction, Volume 86,February 2018, Pages 44-52, DOI: 10.1016/j.autcon.2017.10.033 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{chen2018autcon,<br>
+		title = "Performance evaluation of 3D descriptors for object recognition in construction applications",<br>
+		journal = "Automation in Construction",<br>
+		volume = "86",<br>
+		pages = "44 - 52",<br>
+		year = "2018",<br>
+		issn = "0926-5805",<br>
+		doi = "https://doi.org/10.1016/j.autcon.2017.10.033",<br>
+		url = "http://www.sciencedirect.com/science/article/pii/S0926580517303862",<br>
+		author = "Jingdao Chen and Yihai Fang and Yong K. Cho",<br>
+		}
+		</div>
 	</li> <li>
 	Kim, P., <b>Chen, J.</b>, and Cho, Y. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000720%20"><strong> Automated Point Clouds Registration using Visual and Planar Features for Construction Environments.</strong></a><br>
-	ASCE Journal of Computing in Civil Engineering, Volume 32, Issue2, March 2018, DOI: 10.1061/(ASCE)CP.1943-5487.0000720
+	ASCE Journal of Computing in Civil Engineering, Volume 32, Issue2, March 2018, DOI: 10.1061/(ASCE)CP.1943-5487.0000720 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{kim2018jcce,<br>
+		author = {Pileun Kim  and Jingdao Chen  and Yong K. Cho },<br>
+		title = {Automated Point Cloud Registration Using Visual and Planar Features for Construction Environments},<br>
+		journal = {Journal of Computing in Civil Engineering},<br>
+		volume = {32},<br>
+		number = {2},<br>
+		pages = {04017076},<br>
+		year = {2018},<br>
+		doi = {10.1061/(ASCE)CP.1943-5487.0000720}<br>
+		}
+		</div>
 	</li> <li>
 	Kim, P., <b>Chen, J.</b>, and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1007/s41315-017-0023-9"><strong> Robotic sensing and object recognition from thermal-mapped point clouds.</strong></a><br>
-	International Journal of Intelligent Robotics and Applications. September 2017, Volume 1, Issue 3, Pages 243-254, DOI: 10.1007/s41315-017-0023-9
+	International Journal of Intelligent Robotics and Applications. September 2017, Volume 1, Issue 3, Pages 243-254, DOI: 10.1007/s41315-017-0023-9 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@Article{kim2017ijira,<br>
+		author="Kim, Pileun<br>
+		and Chen, Jingdao<br>
+		and Cho, Yong K.",<br>
+		title="Robotic sensing and object recognition from thermal-mapped point clouds",<br>
+		journal="International Journal of Intelligent Robotics and Applications",<br>
+		year="2017",<br>
+		month="Sep",<br>
+		day="01",<br>
+		volume="1",<br>
+		number="3",<br>
+		pages="243--254",<br>
+		}
+		</div>
 	</li> <li>
 	<b>Chen, J.</b>, Fang, Y., and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000698"><strong> Real-Time 3D Crane Workspace Update Using a Hybrid Visualization Approach.</strong></a><br>
-	ASCE Journal of Computing in Civil Engineering, Volume 31, Issue 5, DOI: 10.1061/(ASCE)CP.1943-5487.0000698
+	ASCE Journal of Computing in Civil Engineering, Volume 31, Issue 5, DOI: 10.1061/(ASCE)CP.1943-5487.0000698 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{chen2017jcce,<br>
+		author = {Jingdao Chen  and Yihai Fang  and Yong K. Cho },<br>
+		title = {Real-Time 3D Crane Workspace Update Using a Hybrid Visualization Approach},<br>
+		journal = {Journal of Computing in Civil Engineering},<br>
+		volume = {31},<br>
+		number = {5},<br>
+		pages = {04017049},<br>
+		year = {2017},<br>
+		doi = {10.1061/(ASCE)CP.1943-5487.0000698},<br>
+		}
+		</div>
 	</li> <li>
 	Park, J.W., <b>Chen, J.</b>, and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1016/j.aei.2017.02.001"><strong> Self-Corrective Knowledge-based Hybrid Tracking System Using BIM and Multimodal Sensors.</strong></a><br>
-	Advanced Engineering Informatics, Volume 32, Issue C, April 2017, Pages 126-138, DOI: 10.1016/j.aei.2017.02.001
+	Advanced Engineering Informatics, Volume 32, Issue C, April 2017, Pages 126-138, DOI: 10.1016/j.aei.2017.02.001 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{park2017aei,<br>
+		title = "Self-corrective knowledge-based hybrid tracking system using BIM and multimodal sensors",<br>
+		journal = "Advanced Engineering Informatics",<br>
+		volume = "32",<br>
+		pages = "126 - 138",<br>
+		year = "2017",<br>
+		issn = "1474-0346",<br>
+		doi = "https://doi.org/10.1016/j.aei.2017.02.001",<br>
+		url = "http://www.sciencedirect.com/science/article/pii/S147403461630252X",<br>
+		author = "JeeWoong Park and Jingdao Chen and Yong K. Cho",<br>
+		}
+		</div>
 	</li> <li>
 	<b>Chen, J.</b>, Fang, Y., Cho, Y., Kim, C. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1061/(ASCE)CP.1943-5487.0000628"><strong> Principal Axes Descriptor (PAD) for Automated Construction Equipment Classification from Point Clouds.</strong></a><br>
-	ASCE's Journal of Computing in Civil Engineering, Volume 31, Issue 2, March 2017, DOI: 10.1061/(ASCE)CP.1943-5487.0000628
+	ASCE's Journal of Computing in Civil Engineering, Volume 31, Issue 2, March 2017, DOI: 10.1061/(ASCE)CP.1943-5487.0000628 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{chen2017pad,<br>
+		author = {Jingdao Chen  and Yihai Fang  and Yong K. Cho  and Changwan Kim },<br>
+		title = {Principal Axes Descriptor for Automated Construction-Equipment Classification from Point Clouds},<br>
+		journal = {Journal of Computing in Civil Engineering},<br>
+		volume = {31},<br>
+		number = {2},<br>
+		pages = {04016058},<br>
+		year = {2017},<br>
+		doi = {10.1061/(ASCE)CP.1943-5487.0000628}<br>
+		}
+		</div>
 	</li> <li>
 	Fang, Y.,Cho, Y., and <b>Chen, J.</b> (2016). <br>
 	<a target="_blank" href="https://doi.org/10.1016/j.autcon.2016.08.025"><strong> A Framework for Real-time Pro-active Safety Assistance for Mobile Crane Lifting Operations.</strong></a><br>
-	Automation in Construction, Volume 72, Part 3, December 2016, Pages 367-379, DOI: 10.1016/j.autocon.2016.08.025
+	Automation in Construction, Volume 72, Part 3, December 2016, Pages 367-379, DOI: 10.1016/j.autocon.2016.08.025 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@article{fang2016autcon,<br>
+		title = "A framework for real-time pro-active safety assistance for mobile crane lifting operations",<br>
+		journal = "Automation in Construction",<br>
+		volume = "72",<br>
+		pages = "367 - 379",<br>
+		year = "2016",<br>
+		issn = "0926-5805",<br>
+		doi = "https://doi.org/10.1016/j.autcon.2016.08.025",<br>
+		url = "http://www.sciencedirect.com/science/article/pii/S0926580516301807",<br>
+		author = "Yihai Fang and Yong K. Cho and Jingdao Chen",<br>
+		}
+		</div>
 	</li>
 												</ol>
 									         </div>
@@ -334,87 +674,311 @@
 												<ol class='publication-list'>
 	<li>Park, J., <b>Chen, J.</b>, and Cho Y. (2020). <br>
 		<a target="_blank" href=""><strong>Point Cloud Information Modeling (PCIM): an Innovative Framework for as-is Information Modeling of Construction Sites</strong></a> <br>
-		ASCE Construction Research Congress (CRC) 2020, March 9-10, Tempe, AZ.
+		ASCE Construction Research Congress (CRC) 2020, March 9-10, Tempe, AZ. <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		</div>
 	</li>
 	<li><b>Chen, J.</b>, and Cho Y. (2019). <br>
 		<a target="_blank" href="https://doi.org/10.1680/icsic.64669.225"><strong>Exemplar-based Building Element Retrieval from Point Clouds</strong></a> <br>
-		International Conference on Smart Infrastructure and Construction (ICSIC), Churchill College, Cambridge, UK, July 8-9.
+		International Conference on Smart Infrastructure and Construction (ICSIC), Churchill College, Cambridge, UK, July 8-9. <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{chen2019icsic,<br>
+		author = {Jingdao Chen and Yong Cho},<br>
+		title = {Exemplar-Based Building Element Retrieval from Point Clouds},<br>
+		booktitle = {International Conference on Smart Infrastructure and Construction 2019 (ICSIC)},<br>
+		year = "2019",<br>
+		pages = {225-231},<br>
+		doi = {10.1680/icsic.64669.225},<br>
+		URL = {https://www.icevirtuallibrary.com/doi/abs/10.1680/icsic.64669.225},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b> and Cho, Y. (2019). <br>
 	<a target="_blank" href="https://doi.org/10.1109/URAI.2019.8768770"><strong>Detection of Damaged Infrastructure on Disaster Sites using Mobile Robots.</strong></a><br>
-	 IEEE 2019 16th International Conference on Ubiquitous Robots (UR), Jeju, Korea, June 24-27
+	 IEEE 2019 16th International Conference on Ubiquitous Robots (UR), Jeju, Korea, June 24-27 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2019ur,<br>
+		author={J. {Chen} and Y. K. {Cho}},<br>
+		booktitle={2019 16th International Conference on Ubiquitous Robots (UR)},<br>
+		title={Detection of Damaged Infrastructure on Disaster Sites using Mobile Robots},<br>
+		year={2019},<br>
+		pages={648-653},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Kim, K.N., Cho,Y., Lee, J., Kim, B., Ahn, Y., and Kang, J. (2019). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784482421.069"><strong>Nuclear Power Plant Disaster Site Simulation using Rigid Body Physics.</strong></a><br>
-	 Proceedings of the ASCE 2019 International Conference on Computing in Civil Engineering (i3CE), Atlanta, GA, USA, June 17-19, DOI:10.1061/9780784482421.069
+	 Proceedings of the ASCE 2019 International Conference on Computing in Civil Engineering (i3CE), Atlanta, GA, USA, June 17-19, DOI:10.1061/9780784482421.069 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{chen2019i3ce,<br>
+		author = {Jingdao Chen  and Kinam Kim  and Yong K. Cho  and Joo Sung Lee  and Byeol Kim  and Yong Han Ahn  and Junsuk Kang },<br>
+		title = {Nuclear Power Plant Disaster Site Simulation Using Rigid Body Physics},<br>
+		booktitle = {International Conference on Computing in Civil Engineering 2019},<br>
+		year={2019},<br>
+		pages = {546-552},<br>
+		doi = {10.1061/9780784482421.069},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784482421.069},<br>
+		}
+		</div>
 	</li><li>
 	Kim, K.N., <b>Chen, J.</b>, and Cho, Y. (2019). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784482438.007"><strong>Evaluation of Machine Learning Algorithms for Worker's Motion Recognition using Motion Sensors.</strong></a><br>
-	 Proceedings of the ASCE 2019 International Conference on Computing in Civil Engineering (i3CE), Atlanta, GA, USA, June 17-19, DOI:10.1061/9780784482438.007
+	 Proceedings of the ASCE 2019 International Conference on Computing in Civil Engineering (i3CE), Atlanta, GA, USA, June 17-19, DOI:10.1061/9780784482438.007 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{kim2019i3ce,<br>
+		author = {Kinam Kim  and Jingdao Chen  and Yong K. Cho },<br>
+		title = {Evaluation of Machine Learning Algorithms for Worker's Motion Recognition Using Motion Sensors},<br>
+		booktitle = {International Conference on Computing in Civil Engineering 2019},<br>
+		year={2019},<br>
+		pages = {51-58},<br>
+		doi = {10.1061/9780784482438.007},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784482438.007},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Kim, P., Cho, Y., and Ueda, J. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1109/URAI.2018.8441896"><strong>Object-sensitive potential fields for mobile robot navigation and mapping in indoor environments.</strong></a><br>
-	 Proceedings of the 2018 IEEE 15th International Conference on Ubiquitous Robots (UR), Honolulu, HI, USA, June 26-30, 10.1109/URAI.2018.8441896
+	 Proceedings of the 2018 IEEE 15th International Conference on Ubiquitous Robots (UR), Honolulu, HI, USA, June 26-30, 10.1109/URAI.2018.8441896 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2018ur,<br>
+		 author={J. {Chen} and P. {Kim} and Y. K. {Cho} and J. {Ueda}}, <br>
+		 booktitle={2018 15th International Conference on Ubiquitous Robots (UR)}, <br>
+		 title={Object-sensitive potential fields for mobile robot navigation and mapping in indoor environments},<br>
+		 year={2018},<br>
+		 pages={328-333},<br>
+		 doi={10.1109/URAI.2018.8441896},<br>
+		 month={June},<br>
+		 }
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Cho, Y., and Ueda, J. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1109/ICRA.2018.8461095"><strong>Sampled-Point Network for Classification for Deformed Building Element Point Clouds.</strong></a><br>
-	 Proceedings of the 2018 IEEE International Conference on Robotics and Automation (ICRA), BrisBane, Australia, May 21-25, 10.1109/ICRA.2018.8461095
+	 Proceedings of the 2018 IEEE International Conference on Robotics and Automation (ICRA), BrisBane, Australia, May 21-25, 10.1109/ICRA.2018.8461095 <br>
+		<a class="paperlink" target="_blank" href="https://github.com/jingdao/BIMNet10">[code]</a>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2018icra,<br>
+		author={J. {Chen} and Y. K. {Cho} and J. {Ueda}},<br>
+		booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},<br>
+		title={Sampled-Point Network for Classification of Deformed Building Element Point Clouds},<br>
+		year={2018},<br>
+		pages={2164-2169},<br>
+		}
+		</div>
 	</li><li>
 	Fang, Y., <b>Chen, J.</b>, Cho, Y., Zhang, S., and Perez, E. (2018). <br>
 	<a target="_blank" href="https://www.researchgate.net/publication/329250361_Enhancing_Blind_Lift_Safety_on_Offshore_Platforms_through_Real-time_Sensing_and_Visualization"><strong> Enhance Blind Lift Safety by Real-Time Sensing and Visualization.</strong></a><br>
-	 Proceedings of the 18thInternational Conference on Construction Applications of Virtual Reality (CONVR2018), Auckland, New Zealand, Nov 22-23
+	 Proceedings of the 18th International Conference on Construction Applications of Virtual Reality (CONVR2018), Auckland, New Zealand, Nov 22-23 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{fang2018convr,<br>
+		author={Yihai Fang and Jingdao Chen and Yong Cho and Sijie Zhang and Esau Perez},<br>
+		booktitle={18th International Conference on Construction Applications of Virtual Reality (CONVR)},<br>
+		title={Enhance Blind Lift Safety by Real-Time Sensing and Visualization},<br>
+		year={2018},<br>
+		month={November},<br>
+		}
+		</div>
 	</li><li>
 	Kim, P., <b>Chen, J.</b>, Kim, J., and Cho, Y. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1007/978-3-319-91635-4_14"><strong>SLAM-Driven Intelligent Autonomous Mobile Robot Navigation for Construction Applications.</strong></a><br>
-	 Best Paper Award, Proceedings of Workshop of the European Group for Intelligent Computing in Engineering, EG-ICE,. pp. 254-269, Lausanne, Switzerland, DOI: 10.1007/978-3-319-91635-4_14
+	 Proceedings of Workshop of the European Group for Intelligent Computing in Engineering, EG-ICE,. pp. 254-269, Lausanne, Switzerland, DOI: 10.1007/978-3-319-91635-4_14 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@InProceedings{kim2018egice,<br>
+		author="Kim, Pileun and Chen, Jingdao and Kim, Jitae and Cho, Yong K.",<br>
+		editor="Smith, Ian F. C.  and Domer, Bernd",<br>
+		title="SLAM-Driven Intelligent Autonomous Mobile Robot Navigation for Construction Applications",<br>
+		booktitle="Advanced Computing Strategies for Engineering",<br>
+		year="2018",<br>
+		publisher="Springer International Publishing",<br>
+		pages="254--269",<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b> and Cho, Y. (2018). <br>
 	<a target="_blank" href="https://www.researchgate.net/publication/325813565_Point-to-point_Comparison_Method_for_Automated_Scan-vs-BIM_Deviation_Detection"><strong>Point-to-point Comparison Method for Automated Scan-vs-BIM Deviation Detection.</strong></a><br>
-	 Proceedings of 17th International Conference on Computing in Civil and Building Engineering, Tampere, Finland, June 4-7.
+	 Proceedings of 17th International Conference on Computing in Civil and Building Engineering, Tampere, Finland, June 4-7. <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2018icccbe,<br>
+		author={Jingdao Chen and Yong Cho},<br>
+		booktitle={17th International Conference on Computing in Civil and Building Engineering},<br>
+		title={Point-to-point Comparison Method for Automated Scan-vs-BIM Deviation Detection},<br>
+		year={2018},<br>
+		month={June},<br>
+		}
+		</div>
 	</li><li>
 	Kim, P., <b>Chen, J.</b>, Cho, Y. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784481264.015"><strong>Autonomous Mobile Robot Localization and Mapping for Unknown Construction Environments.</strong></a><br>
-	 ASCE Construction Research Congress (CRC) 2018, pp.147-156, April 2-4, New Orleans, LA, DOI: 10.1061/9780784481264.015
+	 ASCE Construction Research Congress (CRC) 2018, pp.147-156, April 2-4, New Orleans, LA, DOI: 10.1061/9780784481264.015 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{kim2018crc,<br>
+		author = {Pileun Kim  and Jingdao Chen  and Yong K. Cho },<br>
+		title = {Autonomous Mobile Robot Localization and Mapping for Unknown Construction Environments},<br>
+		booktitle = {Construction Research Congress 2018},<br>
+		year = {2018},<br>
+		pages = {147-156},<br>
+		doi = {10.1061/9780784481264.015},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784481264.015},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Cho, Y., and Kim, K. (2018). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784481264.022"><strong>Region Proposal Mechanism for Building Element Recognition for Advanced Scan-to-BIM Process.</strong></a><br>
-	ASCE Construction Research Congress 2018,April2-4, New Orleans, LA, Doi: 10.1061/9780784481264.022 
+	ASCE Construction Research Congress 2018,April2-4, New Orleans, LA, Doi: 10.1061/9780784481264.022  <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{chen2018crc,<br>
+		author = {Jingdao Chen  and Yong K. Cho  and Kyungki Kim },<br>
+		title = {Region Proposal Mechanism for Building Element Recognition for Advanced Scan-to-BIM Process},<br>
+		booktitle = {Construction Research Congress 2018},<br>
+		year = {2018},<br>
+		pages = {221-231},<br>
+		doi = {10.1061/9780784481264.022},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784481264.022},<br>
+		}
+		</div>
 	</li><li>
-	Kim, P., Cho, Y. and <b>Chen, J.</b> (2017). <br>
+	Kim, P., <b>Chen, J.</b>, and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.22260/ISARC2017/0122"><strong>Building element recognition with thermal-mapped point clouds.</strong></a><br>
-	 Proceedings of the 34rd International Symposium on Automation and Robotics in Construction (ISARC), Taipei, Taiwan, June 28-July 1, DOI: 10.22260/ISARC2017/0122
+	 Proceedings of the 34th International Symposium on Automation and Robotics in Construction (ISARC), Taipei, Taiwan, June 28-July 1, DOI: 10.22260/ISARC2017/0122 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{kim2017isarc,<br>
+		author={Pileun Kim and Jingdao Chen and Yong Cho},<br>
+		booktitle={34th International Symposium on Automation and Robotics in Construction (ISARC)},<br>
+		title={Building element recognition with thermal-mapped point clouds},<br>
+		year={2017},<br>
+		month={June},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Fang, Y., and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784480830.016"><strong>Mobile Asset Tracking for Dynamic 3D Crane Workspace Generation in Real Time.</strong></a><br>
-	 Proceedings of the 2017 International Workshop on Computing for Civil Engineering (IWCCE), Seattle, WA, USA, June 25-27, DOI: 10.1061/9780784480830.016
+	 Proceedings of the 2017 International Workshop on Computing for Civil Engineering (IWCCE), Seattle, WA, USA, June 25-27, DOI: 10.1061/9780784480830.016 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{chen2017crane,<br>
+		author = {Jingdao Chen  and Yihai Fang  and Yong K. Cho },<br>
+		title = {Mobile Asset Tracking for Dynamic 3D Crane Workspace Generation in Real Time},<br>
+		booktitle = {International Workshop on Computing in Civil Engineering 2017},<br>
+		year = {2017},<br>
+		pages = {122-129},<br>
+		doi = {10.1061/9780784480830.016},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784480830.016},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Fang, Y., and Cho, Y. (2017). <br>
 	<a target="_blank" href="https://doi.org/10.1061/9780784480823.005"><strong>Unsupervised Recognition of Volumetric Structural Components from Building Point Clouds.</strong></a><br>
-	 Proceedings of the 2017 International Workshop on Computing for Civil Engineering (IWCCE), Seattle, WA, USA, June 25-27, DOI: 10.1061/9780784480823.005
+	 Proceedings of the 2017 International Workshop on Computing for Civil Engineering (IWCCE), Seattle, WA, USA, June 25-27, DOI: 10.1061/9780784480823.005 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@inproceedings{chen2017iwcce,<br>
+		author = {Jingdao Chen  and Yihai Fang  and Yong K. Cho },<br>
+		title = {Unsupervised Recognition of Volumetric Structural Components from Building Point Clouds},<br>
+		booktitle = {International Workshop on Computing in Civil Engineering 2017},<br>
+		year = {2017},<br>
+		pages = {34-42},<br>
+		doi = {10.1061/9780784480823.005},<br>
+		URL = {https://ascelibrary.org/doi/abs/10.1061/9780784480823.005},<br>
+		}
+		</div>
 	</li><li>
 	Kim, P., Cho, Y., and <b>Chen, J.</b> (2016). <br>
 	<a target="_blank" href="https://www.researchgate.net/publication/318753269_AUTOMATIC_REGISTRATION_OF_LASER_SCANNED_COLOR_POINT_CLOUDS_BASED_ON_COMMON_FEATURE_EXTRACTION"><strong> Automatic Registration of Laser Scanned Color Point Clouds Based on Common Feature Extraction.</strong></a><br>
-	 16th International Conference on Construction Applications of Virtual Reality (CONVR), Hong Kong, Dec. 11-13
+	 16th International Conference on Construction Applications of Virtual Reality (CONVR), Hong Kong, Dec. 11-13 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2016convr,<br>
+		author={Pileun Kim and Yong Cho and Jingdao Chen},<br>
+		booktitle={16th International Conference on Construction Applications of Virtual Reality (CONVR)},<br>
+		title={Automatic Registration of Laser Scanned Color Point Clouds Based on Common Feature Extraction},<br>
+		year={2016},<br>
+		month={December},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b>, Fang, Y., and Cho, Y. (2016). <br>
 	<a target="_blank" href="https://doi.org/10.22260/ISARC2016/0027"><strong>Automated Equipment Recognition and Classification from Scattered Point Clouds for Construction Management.</strong></a><br>
-	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0027
+	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0027 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2016isarc,<br>
+		author={Jingdao Chen and Yihai Fang and Yong Cho},<br>
+		booktitle={33rd International Symposium on Automation and Robotics in Construction (ISARC)},<br>
+		title={Automated Equipment Recognition and Classification from Scattered Point Clouds for Construction Management},<br>
+		year={2016},<br>
+		month={July},<br>
+		}
+		</div>
 	</li><li>
 	<b>Chen, J.</b> and Cho, Y. (2016). <br>
 	<a target="_blank" href="https://doi.org/10.22260/ISARC2016/0028"><strong>Real-time 3D Mobile Mapping for the Built Environment</strong></a><br>
-	. International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0028
+	. International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0028 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{chen2016slam,<br>
+		author={Jingdao Chen and Yong Cho},<br>
+		booktitle={33rd International Symposium on Automation and Robotics in Construction (ISARC)},<br>
+		title={Real-time 3D Mobile Mapping for the Built Environment},<br>
+		year={2016},<br>
+		month={July},<br>
+		}
+		</div>
 	</li><li>
 	Fang, Y., <b>Chen, J.</b>, Cho, Y., and Zhang, P. (2016). <br>
 	<a target="_blank" href="https://doi.org/10.22260/ISARC2016/0074"><strong>A Point Cloud-Vision Hybrid Approach for 3D Location Tracking of Mobile Construction Assets.</strong></a><br>
-	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0074
+	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0074 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{fang2016isarc,<br>
+		author={Yihai Fang and Jingdao Chen and Yong Cho and Peiyao Zhang},<br>
+		booktitle={33rd International Symposium on Automation and Robotics in Construction (ISARC)},<br>
+		title={A Point Cloud-Vision Hybrid Approach for 3D Location Tracking of Mobile Construction Assets},<br>
+		year={2016},<br>
+		month={July},<br>
+		}
+		</div>
 	</li><li>
 	Kim, P., Cho, Y. <b>Chen, J.</b> (2016). <br>
 	<a target="_blank" href="https://doi.org/10.22260/ISARC2016/0083"><strong>Target-Free Automatic Registration of Point Clouds.</strong></a><br>
-	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0083
+	 International Symposium on Automation and Robotics in Construction (ISARC), Auburn, AL, July 18-21, 2016, DOI: 10.22260/ISARC2016/0083 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		@INPROCEEDINGS{kim2016isarc,<br>
+		author={Pileun Kim and Yong Cho and Jingdao},<br>
+		booktitle={33rd International Symposium on Automation and Robotics in Construction (ISARC)},<br>
+		title={Target-Free Automatic Registration of Point Clouds},<br>
+		year={2016},<br>
+		month={July},<br>
+		}
+		</div>
 	</li>
 												</ol>
 									        </div>
 									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" target="_blank" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Bibliography
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div id="bibliography" class="panel-body" style="font-size:14px;font-family:monospace;">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
