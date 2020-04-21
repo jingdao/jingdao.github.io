@@ -287,7 +287,6 @@
 	};
 
 	var generateBibliography = function() {
-		console.log('hello world');
 		var bib = "";
 		$('.bibref').each(function(index, value) {
 		  bib += value.innerHTML + "<br>";
