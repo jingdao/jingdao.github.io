@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Python Exercises</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!--link rel="shortcut icon" href="favicon.ico"-->
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<!--link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"-->
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<style>
+		.paperlink:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.bibref {
+		  margin-top: 10px;
+		  margin-left: 10px;
+		  display:none;
+		  font-size:14px;
+		  font-family: monospace;
+		}
+		ol.question-list li {
+			padding-bottom: 15px;
+			padding-left: 20px;
+		}
+	</style>
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/profile.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Jingdao Chen</a></h1>
+				<span class="position"><a href="#">Georgia Institute of Technology</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse" style="margin-bottom:10px">
+					<ul>
+						<li class="active"><a class='external' href="index.html">Home</a></li>
+						<li><a href="#" data-nav-section="Arithmetic">Arithmetic</a></li>
+						<li><a href="#" data-nav-section="Loops">Loops</a></li>
+						<li><a href="#" data-nav-section="Strings">Strings</a></li>
+						<li><a href="#" data-nav-section="NumPy">Numpy</a></li>
+						<li><a href="#" data-nav-section="PyGame">PyGame</a></li>
+					</ul>
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span>
+                <!--span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span-->
+                </small></p>
+			</div>
+				</div>
+			</nav>
+
+
+		</aside>
+		<div id="colorlib-main">
+
+			<section class="colorlib-experience" data-section="Arithmetic">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading animate-box">Arithmetic</h2>
+						</div>
+					</div>
+					<ol class='question-list'>
+						<li>
+							<b>Time Calculator</b><br>
+							Write a function that takes an input x (number of seconds), and
+							returns 4 numbers, namely the number of days, hours, minutes, and seconds that is represented by the input.<br>
+							<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[Reveal]</a>
+							<div class="bibref">
+							<pre class="prettyprint"><code class="language-python">
+    def dhms(x):
+        days = x//86400
+        hours = (x%86400)//3600
+        minutes = (x%3600)//60
+        seconds = x%60
+        return days,'days',hours,'hours',minutes,'minutes',seconds,'seconds'
+							</code></pre>
+						</li>
+						<li>
+							<b>Tip Calculator</b><br>
+							Write a function that takes an input price and service quality and calculate the price after tips.
+							Assume tips is 20% if service is good, 10% if medium and 0% if service is bad.<br>
+							<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[Reveal]</a>
+							<div class="bibref">
+							<pre class="prettyprint"><code class="language-python">
+    def tip_calculator(price, service):
+        if service == "good":
+            return price * 1.2 #apply 20% tips
+        elif service == "medium":
+            return price * 1.1 #apply 10% tips
+        elif service == "bad":
+            return price * 1.0 #apply 0% tips
+							</code></pre>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+		</div>
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
