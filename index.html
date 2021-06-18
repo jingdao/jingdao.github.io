@@ -126,6 +126,7 @@
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="research">Research</a></li>
 						<li><a href="#" data-nav-section="publications">Publications</a></li>
+						<li><a href="#" data-nav-section="teaching">Teaching</a></li>
 						<li><a href="#" data-nav-section="code">Code</a></li>
 						<li><a href="#" data-nav-section="interests">Interests</a></li>
 						<li><a class='external' target="_blank" href="CV.pdf">CV</a></li>
@@ -151,7 +152,7 @@
 		</aside>
 
 		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+			<section id="colorlib-hero" data-section="home">
 				<div class="flexslider">
 					<ul class="slides">
 				   	<li style="background-image: url(images/bg.png);">
@@ -162,7 +163,8 @@
 					   				<div class="slider-text-inner js-fullheight">
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Jingdao</h1>
-						   					<h2>I am currently pursuing a PhD in Robotics at Georgia Tech under the supervision of Dr. Yong K. Cho.
+						   					<h2>I recently completed my PhD in Robotics at Georgia Tech under the supervision of Dr. Yong K. Cho.
+                                            I will start as an Assistant Professor in the Computer Science and Engineering Department at Mississippi State University in August 2021.
 											My research is centered on creating rich, versatile, and informative 3D
 											representations of the surrounding environment through point cloud data.
 											My research aims to leverage databases of known object models to infer
@@ -439,6 +441,7 @@
 		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
 		<div class="bibref">
 		@ARTICLE{chen2021ral,<br>
+        title={LRGNet: Learnable Region Growing for Class-Agnostic Point Cloud Segmentation},<br>
 		author={J. {Chen} and Z. {Kira} and Y. K. {Cho}},<br>
 		journal={IEEE Robotics and Automation Letters},<br>
         year = {2021},<br>
@@ -743,17 +746,33 @@
 									        <div class="panel-body">
 												<ol class='publication-list'>
     <h3>2021</h3>
+    <li>
+	Kahoush, M., Yajima, Y., Kim, S., <b>Chen, J.</b>, Park, J., Kangisser, S., Irizarry, J., Cho,Y. (2021). <br>
+	<a target="_blank" href=""><strong>Analysis of Flight Parameters on UAV Semantic Segmentation Performance for Highway Infrastructure Monitoring.</strong></a><br>
+	 Proceedings of the ASCE 2021 International Conference on Computing in Civil Engineering (i3CE), Orlando, FL, USA, September 12-14 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		</div>
+	</li>
+    <li>
+	Yajima, Y., Kahoush, M., Kim, S., <b>Chen, J.</b>, Park, J., Kangisser, S., Irizarry, J., Cho,Y. (2021). <br>
+	<a target="_blank" href=""><strong>AI-driven 3D Point Cloud-Based Highway Infrastructure Monitoring System using UAV.</strong></a><br>
+	 Proceedings of the ASCE 2021 International Conference on Computing in Civil Engineering (i3CE), Orlando, FL, USA, September 12-14 <br>
+		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
+		<div class="bibref">
+		</div>
+	</li>
     <h3>2020</h3>
 	<li>
 	<b>Chen, J.</b>, Kim, P., Sun, D.I., Han, C.S., Ahn, Y.H., Ueda, J. and Cho, Y. (2020). <br>
-	<a target="_blank" href="https://doi.org/10.22260/ISARC2020/0108"><strong>Workspace Modeling: Visualization and Pose Estimation of Teleoperated Construction Equpiment from Point Clouds.</strong></a><br>
+	<a target="_blank" href="https://doi.org/10.22260/ISARC2020/0108"><strong>Workspace Modeling: Visualization and Pose Estimation of Teleoperated Construction Equipment from Point Clouds.</strong></a><br>
 	 Proceedings of the 37th International Symposium on Automation and Robotics in Construction (ISARC), Kitakyshu, Japan, October 27-28<br>
 		<a class="paperlink" onclick="$(this).siblings('.bibref').slideToggle()">[bibtex]</a>
 		<div class="bibref">
 		@INPROCEEDINGS{chen2020isarc,<br>
 		author={Jingdao Chen and Pileun Kim and Dong-Ik Sun and Chang-Soo Han and Yong-Han Ahn and Jun Ueda and Yong K. Cho},<br>
 		booktitle={37th International Symposium on Automation and Robotics in Construction (ISARC)},<br>
-		title={Workspace Modeling: Visualization and Pose Estimation of Teleoperated Construction Equpiment from Point Clouds},<br>
+		title={Workspace Modeling: Visualization and Pose Estimation of Teleoperated Construction Equipment from Point Clouds},<br>
 		year={2020},<br>
 		month={October},<br>
         pages={781-788},<br>
@@ -1110,14 +1129,34 @@
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingThree">
 									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" target="_blank" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Bibliography
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" target="_blank" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Workshop Presentations
 									            </a>
 									        </h4>
 									    </div>
 									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+												<ol class='publication-list'>
+    <h3>2021</h3>
+    <li>
+	<b>Chen, J.</b>, Park, J., Yajima, Y., Kim, S. (2021). <br>
+	<a target="_blank" href="https://cv4aec.github.io/index.html"><strong>GTS2B</strong></a><br>
+    1st Workshop and Challenge on Computer Vision in the Built Environment. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021. <br>
+    </li>
+												</ol>
+									        </div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" target="_blank" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Bibliography
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 									        <div id="bibliography" class="panel-body" style="font-size:14px;font-family:monospace;">
 											</div>
-										</div>
+									    </div>
 									</div>
 								</div>
 							</div>
@@ -1125,6 +1164,22 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="colorlib-experience" data-section="teaching">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 " data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading ">Teaching</h2>
+						</div>
+					</div>
+                    Courses at Mississippi State University:
+                    <ul>
+                    <li>
+                    Fall 2021 - CSE 4643/6643: AI Robotics
+                    </li>
+                    </ul>
+                </div>
+            </section>
 
 			<section class="colorlib-experience" data-section="code">
 				<div class="colorlib-narrow-content">
@@ -1224,7 +1279,7 @@
                             <img src="images/gallery/atlanta.jpg" class="gallery">
                         </div>
 						<div class="col-md-4 text-center ">
-                            <img src="images/gallery/nami.jpg" class="gallery">
+                            <img src="images/gallery/graduation.jpg" class="gallery">
                         </div>
 						<div class="col-md-4 text-center ">
                             <img src="images/gallery/everett.jpg" class="gallery">
